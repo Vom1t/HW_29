@@ -1,4 +1,5 @@
 from django.core.exceptions import ObjectDoesNotExist
+from django.utils.encoding import smart_str
 
 from ads.models import Category, Ad
 from rest_framework import serializers

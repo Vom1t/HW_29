@@ -20,13 +20,16 @@ from django.urls import path, include
 from HW_27 import settings
 from ads.views.ad import *
 from ads.views.category import *
+from users.views import LocationViewSet
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', root),
     path('ad/', include('ads.urls.ad')),
     path('cat/', include('ads.urls.category')),
-    path('user/', include('users.urls')),
+    path('user/', include('users.urls.user')),
+    path('location/', include('users.urls.locations')),
+
 
 ]
 
